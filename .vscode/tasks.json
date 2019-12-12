@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "command": "gcc",
+    "isShellCommand": true,
+    "args": ["-g","-Wall", "-Werror", "-Wextra", "main.c"],
+    "showOutput": "always",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "cpp.exe build active file",
+            "command": "C:\\Users\\Sitych\\gcc\\bin\\cpp.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\Users\\Sitych\\gcc\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}
